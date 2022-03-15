@@ -1,9 +1,3 @@
-# from ast import If
-# import imp
-# from json.tool import main
-# from tkinter.tix import MAIN
-from http import server
-from unittest import result
 import pyttsx3  # for voice
 import speech_recognition as sr
 import wikipedia
@@ -14,7 +8,6 @@ import smtplib # for Email
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
-# print(voices[0].id)
 engine.setProperty('voice', voices[1].id)
 
 def speak(audio):
